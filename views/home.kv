@@ -1,0 +1,61 @@
+
+<HomeMainScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        md_bg_color: 1,1,1,1
+        MDToolbar:
+            elevation: 0
+            pos_hint: {"top": 1}
+            md_bg_color: 1,1,1,1
+            specific_text_color: .2,.2,.2,1
+            left_action_items: [["menu", lambda x:x]]
+            right_action_items: [["assets/photo.png", lambda x:x]]
+        BoxLayout:
+            orientation: 'vertical'
+            ScrollView:
+                always_overscroll: False
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: 'vertical'
+                        adaptive_height: True
+                        padding: dp(23), dp(5)
+                        MDLabel:
+                            text: "Mega Store"
+                            bold: True
+                            font_size: sp(24)
+                            adaptive_height: True
+                            font_name: 'assets/NexaDemo-Bold.ttf'
+                        MDLabel:
+                            text: "Find out your Gadgets"
+                            adaptive_height: True
+                            font_name: 'assets/NexaDemo-Light.ttf'
+
+                    MDBoxLayout:
+                        size_hint: 1, None
+                        spacing: dp(20)
+                        padding: dp(20), dp(20)
+                        height: self.width
+                        FitImage:
+                            source: "assets/image-01.png"
+                            radius: [dp(15)]
+                        MDBoxLayout:
+                            orientation: 'vertical'
+                            spacing: dp(20)
+                            size_hint_x: .8
+                            FitImage:
+                                source: "assets/image-02.png"
+                                radius: [dp(15)]
+                            FitImage:
+                                source: "assets/image-03.png"
+                                radius: [dp(15)]
+
+                    MDBoxLayout:
+                        size_hint: 1, None
+                        padding: dp(20), dp(10)
+                        height: self.width * .74
+                        FitImage:
+                            source: "assets/image-04.png"
+                            radius: [dp(20)]
