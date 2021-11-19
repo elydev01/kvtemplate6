@@ -1,6 +1,6 @@
 # kvtemplate6
 
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=elydev01.kvtemplate9">
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=elydev01.kvtemplate6">
 
 ![](assets/screen.png)
 
